@@ -1,9 +1,16 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import { IoIosArrowForward, IoIosNotificationsOutline } from 'react-icons/io';
 import { AiOutlineSearch } from 'react-icons/ai';
+import { useNavigate } from 'react-router-dom';
 
 export default function navbar() {
+  const navigate = useNavigate();
+  const onDashboard = () => {
+    navigate('/login');
+  };
   return (
     <div className="px-7 py-5 bg-[#f0f5ed] flex">
       <div className="flex w-[30%]">
@@ -19,7 +26,7 @@ export default function navbar() {
           src="https://expertphotography.b-cdn.net/wp-content/uploads/2020/08/social-media-profile-photos-3.jpg"
           alt=""
         />
-        <label className="" htmlFor="">
+        <label onClick={() => onDashboard()} className="cursor-pointer" htmlFor="">
           John Doe
         </label>
       </div>

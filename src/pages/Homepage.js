@@ -8,6 +8,7 @@ import LabelDetail from '../components/atoms/labelDetailCompany';
 import LabelCardLocation from '../components/atoms/labelCardLokasi';
 import CardBank from '../components/molecules/accountBank';
 import Navbar from '../components/organisms/navbar';
+import mitramas from '../assets/mitramas.png';
 
 function Homepage() {
   return (
@@ -26,7 +27,7 @@ function Homepage() {
                 <img
                   className="rounded-full w-[150px] h-[150px] border"
                   // className="rounded-full w-[150px] h-[150px] border ml-[20%] -mt-16 bg-red"
-                  src="http://202.159.35.85/cdn/d:300/company/logo/20210611/c943659b6850d2832a95c6e76f5d39019defad5d1623372588.PNG"
+                  src={mitramas}
                   alt=""
                 />
                 <div className="flex flex-col justify-center items-center mt-6">
